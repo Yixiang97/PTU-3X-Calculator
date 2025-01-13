@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTU 3x Fitness Test Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>PTU 3x Fitness Test Calculator</h1>
+    <div class="container">
+        <form id="ptuForm">
+            <label for="chinups">Chin-ups (Reps):</label>
+            <input type="number" id="chinups" min="0" placeholder="e.g., 20" required>
+
+            <label for="situps">Sit-ups (Reps):</label>
+            <input type="number" id="situps" min="0" placeholder="e.g., 80" required>
+
+            <label for="runtime">3.2km Run Time (MM:SS):</label>
+            <input type="text" id="runtime" placeholder="e.g., 18:30" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" min="0" placeholder="e.g., 25" required>
+
+            <button type="button" onclick="calculateScores()">Calculate</button>
+        </form>
+    </div>
+
+    <!-- Modal for displaying results -->
+    <div id="resultModal">
+        <span id="closeModal" onclick="closeModal()">&times;</span>
+        <div id="modalContent"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
